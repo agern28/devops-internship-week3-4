@@ -1,55 +1,37 @@
-English
-devops-internship-week3-4
-Stajda bana verilen DevOps programının 3. ve 4. haftası: önce CI/CD pipeline'ları, sonra Kubernetes temelleri. İki hafta da tek bir küçük Node.js/Express servisi üzerinden ilerliyor. Aynı uygulama zincirin tamamını dolaşıyor: CI'da build edilip test ediliyor, container image olarak paketleniyor, registry'ye push ediliyor ve en sonunda Helm ile yerel bir cluster'a deploy ediliyor.
-ve 2. haftalar (Git, Linux, Docker) ayrı bir repoda: agern28/devops-internship.
-Her günün kendi notu var, Türkçe ve İngilizce. Bunlar öğretici metinler değil, çalışırken tuttuğum notlar: ne yaptım, nerede takıldım, elimde ne kaldı.
-Durum
-Gün
-Konu
-Durum
-Not
-11
-Pipeline tasarımı
-Tamam
-TR / EN
-12
-GitHub Actions: workflow, matrix build, cache
-Başlanmadı
--
-13
-Kalite kapıları: lint, coverage, CodeQL
-Başlanmadı
--
-14
-Build, GHCR push, semantic versioning, release
-Başlanmadı
--
-15
-Jenkins / GitLab CI karşılaştırması (opsiyonel)
-Başlanmadı
--
-16
-Kubernetes temelleri: pod, deployment, service
-Başlanmadı
--
-17
-ConfigMap, Secret, Ingress, namespace
-Başlanmadı
--
-18
-Helm chart
-Başlanmadı
--
-19
-Probe, resource limit, autoscaling
-Başlanmadı
--
-20
-Ara değerlendirme ve demo
-Başlanmadı
--
+[English](README.md)
 
-Yapı
+# devops-internship-week3-4
+
+Stajda bana verilen DevOps programının 3. ve 4. haftası: önce CI/CD pipeline'ları, sonra
+Kubernetes temelleri. İki hafta da tek bir küçük Node.js/Express servisi üzerinden ilerliyor.
+Aynı uygulama zincirin tamamını dolaşıyor: CI'da build edilip test ediliyor, container image
+olarak paketleniyor, registry'ye push ediliyor ve en sonunda Helm ile yerel bir cluster'a
+deploy ediliyor.
+
+1. ve 2. haftalar (Git, Linux, Docker) ayrı bir repoda:
+[agern28/devops-internship](https://github.com/agern28/devops-internship).
+
+Her günün kendi notu var, Türkçe ve İngilizce. Bunlar öğretici metinler değil, çalışırken
+tuttuğum notlar: ne yaptım, nerede takıldım, elimde ne kaldı.
+
+## Durum
+
+| Gün | Konu | Durum | Not |
+|-----|------|-------|-----|
+| 11 | Pipeline tasarımı | Tamam | [TR](docs/week3/day11-pipeline-design.tr.md) / [EN](docs/week3/day11-pipeline-design.md) |
+| 12 | GitHub Actions: workflow, matrix build, cache | Başlanmadı | - |
+| 13 | Kalite kapıları: lint, coverage, CodeQL | Başlanmadı | - |
+| 14 | Build, GHCR push, semantic versioning, release | Başlanmadı | - |
+| 15 | Jenkins / GitLab CI karşılaştırması (opsiyonel) | Başlanmadı | - |
+| 16 | Kubernetes temelleri: pod, deployment, service | Başlanmadı | - |
+| 17 | ConfigMap, Secret, Ingress, namespace | Başlanmadı | - |
+| 18 | Helm chart | Başlanmadı | - |
+| 19 | Probe, resource limit, autoscaling | Başlanmadı | - |
+| 20 | Ara değerlendirme ve demo | Başlanmadı | - |
+
+## Yapı
+
+```
 .
 ├── docs/
 │   ├── week3/          CI/CD notları, Gün 11-15
@@ -59,7 +41,7 @@ Yapı
 ├── .github/workflows/  CI, kalite kapıları, release (Gün 12-14)
 ├── k8s/                ham manifest'ler (Gün 16-19)
 └── helm/               chart (Gün 18)
+```
 
-Şu an sadece dokümanlar var. Uygulama ve çevresindeki her şey yukarıdaki sırayla, gün gün ekleniyor; böylece commit geçmişi programın kendisiyle örtüşüyor.
-
-
+Şu an sadece dokümanlar var. Uygulama ve çevresindeki her şey yukarıdaki sırayla, gün gün
+ekleniyor; böylece commit geçmişi programın kendisiyle örtüşüyor.
