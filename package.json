@@ -1,0 +1,31 @@
+{
+  "name": "devops-training-app",
+  "version": "1.0.0",
+  "description": "Sample service for CI/CD and Kubernetes hands-on labs",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "build": "echo \"No build step for plain Node app\" && exit 0",
+    "lint": "eslint .",
+    "test": "jest --coverage"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "npm": "^12.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverageFrom": [
+      "src/**/*.js"
+    ]    
+  },
+  "license": "MIT"
+}
