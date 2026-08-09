@@ -19,7 +19,7 @@ tuttuğum notlar: ne yaptım, nerede takıldım, elimde ne kaldı.
 | Gün | Konu | Durum | Not |
 |-----|------|-------|-----|
 | 11 | Pipeline tasarımı | Tamam | [TR](docs/week3/day11-pipeline-design.tr.md) / [EN](docs/week3/day11-pipeline-design.md) |
-| 12 | GitHub Actions: workflow, matrix build, cache | Başlanmadı | - |
+| 12 | GitHub Actions: workflow, matrix build, cache | Tamam | [TR](docs/week3/day12-github-actions.tr.md) / [EN](docs/week3/day12-github-actions.md) |
 | 13 | Kalite kapıları: lint, coverage, CodeQL | Başlanmadı | - |
 | 14 | Build, GHCR push, semantic versioning, release | Başlanmadı | - |
 | 15 | Jenkins / GitLab CI karşılaştırması (opsiyonel) | Başlanmadı | - |

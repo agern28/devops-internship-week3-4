@@ -18,7 +18,7 @@ tutorials - what I did, what broke, and what I ended up with.
 | Day | Topic | Status | Notes |
 |-----|-------|--------|-------|
 | 11 | Pipeline design | Done | [EN](docs/week3/day11-pipeline-design.md) / [TR](docs/week3/day11-pipeline-design.tr.md) |
-| 12 | GitHub Actions: workflows, matrix builds, caching | Not started | - |
+| 12 | GitHub Actions: workflows, matrix builds, caching | Done | [EN](docs/week3/day12-github-actions.md) / [TR](docs/week3/day12-github-actions.tr.md) |
 | 13 | Quality gates: lint, coverage, CodeQL | Not started | - |
 | 14 | Build, push to GHCR, semantic versioning, releases | Not started | - |
 | 15 | Jenkins / GitLab CI comparison (optional) | Not started | - |
