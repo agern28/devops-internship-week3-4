@@ -48,3 +48,6 @@ function createApp() {
 }
 
 module.exports = { createApp, VERSION };
+
+// Intentional lint error to prove the quality gate blocks bad code.
+const unusedOnPurpose = 42;
