@@ -8,9 +8,12 @@ let requestCount = 0;
 let ready = false;
 
 // Simulate a short warm-up so readiness differs from liveness.
-setTimeout(() => {
+const warmupTimer = setTimeout(() => {
   ready = true;
 }, 2000);
+
+// Do not let the warm-up timer keep the process (or a test run) alive.
+warmupTimer.unref();
 
 function createApp() {
   const app = express();
