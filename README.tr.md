@@ -21,7 +21,7 @@ tuttuğum notlar: ne yaptım, nerede takıldım, elimde ne kaldı.
 | 11 | Pipeline tasarımı | Tamam | [TR](docs/week3/day11-pipeline-design.tr.md) / [EN](docs/week3/day11-pipeline-design.md) |
 | 12 | GitHub Actions: workflow, matrix build, cache | Tamam | [TR](docs/week3/day12-github-actions.tr.md) / [EN](docs/week3/day12-github-actions.md) |
 | 13 | Kalite kapıları: lint, coverage, CodeQL | Tamam | [TR](docs/week3/day13-quality-gates.tr.md) / [EN](docs/week3/day13-quality-gates.md) |
-| 14 | Build, GHCR push, semantic versioning, release | Başlanmadı | - |
+| 14 | Build, GHCR push, semantic versioning, release | Tamam | [TR](docs/week3/day14-release-pipeline.tr.md) / [EN](docs/week3/day14-release-pipeline.md) |
 | 15 | Jenkins / GitLab CI karşılaştırması (opsiyonel) | Başlanmadı | - |
 | 16 | Kubernetes temelleri: pod, deployment, service | Başlanmadı | - |
 | 17 | ConfigMap, Secret, Ingress, namespace | Başlanmadı | - |
