@@ -20,7 +20,7 @@ tutorials - what I did, what broke, and what I ended up with.
 | 11 | Pipeline design | Done | [EN](docs/week3/day11-pipeline-design.md) / [TR](docs/week3/day11-pipeline-design.tr.md) |
 | 12 | GitHub Actions: workflows, matrix builds, caching | Done | [EN](docs/week3/day12-github-actions.md) / [TR](docs/week3/day12-github-actions.tr.md) |
 | 13 | Quality gates: lint, coverage, CodeQL | Done | [EN](docs/week3/day13-quality-gates.md) / [TR](docs/week3/day13-quality-gates.tr.md) |
-| 14 | Build, push to GHCR, semantic versioning, releases | Not started | - |
+| 14 | Build, push to GHCR, semantic versioning, releases | Done | [EN](docs/week3/day14-release-pipeline.md) / [TR](docs/week3/day14-release-pipeline.tr.md) |
 | 15 | Jenkins / GitLab CI comparison (optional) | Not started | - |
 | 16 | Kubernetes basics: pods, deployments, services | Not started | - |
 | 17 | ConfigMaps, Secrets, Ingress, namespaces | Not started | - |
