@@ -22,8 +22,8 @@ tuttuğum notlar: ne yaptım, nerede takıldım, elimde ne kaldı.
 | 12 | GitHub Actions: workflow, matrix build, cache | Tamam | [TR](docs/week3/day12-github-actions.tr.md) / [EN](docs/week3/day12-github-actions.md) |
 | 13 | Kalite kapıları: lint, coverage, CodeQL | Tamam | [TR](docs/week3/day13-quality-gates.tr.md) / [EN](docs/week3/day13-quality-gates.md) |
 | 14 | Build, GHCR push, semantic versioning, release | Tamam | [TR](docs/week3/day14-release-pipeline.tr.md) / [EN](docs/week3/day14-release-pipeline.md) |
-| 15 | Jenkins / GitLab CI karşılaştırması (opsiyonel) | Başlanmadı | - |
-| 16 | Kubernetes temelleri: pod, deployment, service | Başlanmadı | - |
+| 15 | Jenkins / GitLab CI karşılaştırması (opsiyonel) | Tamam | [TR](docs/week3/day15-jenkins-comparison.tr.md) / [EN](docs/week3/day15-jenkins-comparison.md) |
+| 16 | Kubernetes temelleri: pod, deployment, service | Tamam | [TR](docs/week4/day16-kubernetes-basics.tr.md) / [EN](docs/week4/day16-kubernetes-basics.md) |
 | 17 | ConfigMap, Secret, Ingress, namespace | Başlanmadı | - |
 | 18 | Helm chart | Başlanmadı | - |
 | 19 | Probe, resource limit, autoscaling | Başlanmadı | - |
