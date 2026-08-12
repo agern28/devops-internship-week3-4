@@ -25,7 +25,7 @@ tutorials - what I did, what broke, and what I ended up with.
 | 16 | Kubernetes basics: pods, deployments, services | Done | [EN](docs/week4/day16-kubernetes-basics.md) / [TR](docs/week4/day16-kubernetes-basics.tr.md) |
 | 17 | ConfigMaps, Secrets, Ingress, namespaces | Done | [EN](docs/week4/day17-config-secrets-ingress.md) / [TR](docs/week4/day17-config-secrets-ingress.tr.md) |
 | 18 | Helm charts | Done | [EN](docs/week4/day18-helm-chart.md) / [TR](docs/week4/day18-helm-chart.tr.md) |
-| 19 | Probes, resource limits, autoscaling | Not started | - |
+| 19 | Probes, resource limits, autoscaling | Done | [EN](docs/week4/day19-probes-hpa.md) / [TR](docs/week4/day19-probes-hpa.tr.md) |
 | 20 | Mid-program review and demo | Not started | - |
 
 ## Layout

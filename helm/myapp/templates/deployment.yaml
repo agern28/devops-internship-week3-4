@@ -5,16 +5,18 @@ metadata:
   labels:
     {{- include "myapp.labels" . | nindent 4 }}
 spec:
+  {{- if not .Values.autoscaling.enabled }}
+  # Omitted when autoscaling is on: the HPA owns the replica count,
+  # and setting it here would fight the controller on every upgrade.
   replicas: {{ .Values.replicaCount }}
+  {{- end }}
   selector:
     matchLabels:
       {{- include "myapp.selectorLabels" . | nindent 6 }}
   template:
     metadata:
       annotations:
-        # Restart pods when the ConfigMap or Secret content changes.
-        # Env vars are read at container start, so without this a
-        # `helm upgrade` that only changes config leaves pods untouched.
+        # Restart pods when config or secret content changes.
         checksum/config: {{ include (print $.Template.BasePath "/configmap.yaml") . | sha256sum }}
         checksum/secret: {{ include (print $.Template.BasePath "/secret.yaml") . | sha256sum }}
       labels:
@@ -35,3 +37,23 @@ spec:
                 secretKeyRef:
                   name: {{ include "myapp.fullname" . }}-secret
                   key: API_KEY
+          startupProbe:
+            httpGet:
+              path: {{ .Values.probes.startup.path }}
+              port: {{ .Values.service.targetPort }}
+            periodSeconds: {{ .Values.probes.startup.periodSeconds }}
+            failureThreshold: {{ .Values.probes.startup.failureThreshold }}
+          livenessProbe:
+            httpGet:
+              path: {{ .Values.probes.liveness.path }}
+              port: {{ .Values.service.targetPort }}
+            periodSeconds: {{ .Values.probes.liveness.periodSeconds }}
+            failureThreshold: {{ .Values.probes.liveness.failureThreshold }}
+          readinessProbe:
+            httpGet:
+              path: {{ .Values.probes.readiness.path }}
+              port: {{ .Values.service.targetPort }}
+            periodSeconds: {{ .Values.probes.readiness.periodSeconds }}
+            failureThreshold: {{ .Values.probes.readiness.failureThreshold }}
+          resources:
+            {{- toYaml .Values.resources | nindent 12 }}
