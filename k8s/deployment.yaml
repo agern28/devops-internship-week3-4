@@ -1,5 +1,5 @@
-# Day 16 — minimal Deployment. Config, secrets, probes and limits
-# arrive on days 17 and 19.
+# Day 16 + 17 — Deployment with config and secrets injected.
+# Probes and resource limits arrive on day 19.
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -23,3 +23,14 @@ spec:
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8080
+          # Day 17 — non-sensitive config as environment variables
+          envFrom:
+            - configMapRef:
+                name: app-config
+          # Day 17 — sensitive value, referenced not inlined
+          env:
+            - name: API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: app-secret
+                  key: API_KEY
