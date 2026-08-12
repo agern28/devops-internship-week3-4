@@ -26,7 +26,7 @@ tutorials - what I did, what broke, and what I ended up with.
 | 17 | ConfigMaps, Secrets, Ingress, namespaces | Done | [EN](docs/week4/day17-config-secrets-ingress.md) / [TR](docs/week4/day17-config-secrets-ingress.tr.md) |
 | 18 | Helm charts | Done | [EN](docs/week4/day18-helm-chart.md) / [TR](docs/week4/day18-helm-chart.tr.md) |
 | 19 | Probes, resource limits, autoscaling | Done | [EN](docs/week4/day19-probes-hpa.md) / [TR](docs/week4/day19-probes-hpa.tr.md) |
-| 20 | Mid-program review and demo | Not started | - |
+| 20 | Mid-program review and demo | Done | [EN](docs/week4/day20-demo-runbook.md) / [TR](docs/week4/day20-demo-runbook.tr.md) |
 
 ## Layout
 
