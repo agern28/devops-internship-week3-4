@@ -41,7 +41,10 @@ function createApp() {
   });
 
   app.get('/metrics', (req, res) => {
-    res.type('text/plain').send(`app_requests_total ${requestCount}\n`);
+    res.type('text/plain').send(
+      `app_requests_total ${requestCount}\n` +
+      `app_uptime_seconds ${Math.floor(process.uptime())}\n`
+    );
   });
 
   return app;
