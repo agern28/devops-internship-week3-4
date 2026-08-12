@@ -26,9 +26,35 @@ secret:
   #   helm install ... --set secret.API_KEY='...'
   API_KEY: ""
 
-# Probes, resource limits and autoscaling arrive on day 19.
+# Requests are what the scheduler reserves and what the HPA measures
+# utilisation against. Limits are the hard ceiling.
+resources:
+  requests:
+    cpu: 100m
+    memory: 128Mi
+  limits:
+    cpu: 500m
+    memory: 256Mi
+
+probes:
+  # Slow-start guard: liveness does not begin until this passes.
+  startup:
+    path: /healthz
+    periodSeconds: 2
+    failureThreshold: 30
+  # Is the process alive? Failing this restarts the container.
+  liveness:
+    path: /healthz
+    periodSeconds: 10
+    failureThreshold: 3
+  # Can it serve traffic? Failing this removes it from the Service.
+  readiness:
+    path: /ready
+    periodSeconds: 2
+    failureThreshold: 3
+
 autoscaling:
-  enabled: false
+  enabled: true
   minReplicas: 2
   maxReplicas: 5
   targetCPUUtilizationPercentage: 70
