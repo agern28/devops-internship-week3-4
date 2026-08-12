@@ -1,0 +1,11 @@
+# Day 17 — Externalize non-sensitive configuration.
+# APP_VERSION deliberately NOT here: it is baked into the image at build
+# time, and a ConfigMap that disagrees with the image would lie about
+# which build is running.
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-config
+  namespace: app
+data:
+  LOG_LEVEL: "debug"

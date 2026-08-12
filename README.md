@@ -23,8 +23,8 @@ tutorials - what I did, what broke, and what I ended up with.
 | 14 | Build, push to GHCR, semantic versioning, releases | Done | [EN](docs/week3/day14-release-pipeline.md) / [TR](docs/week3/day14-release-pipeline.tr.md) |
 | 15 | Jenkins / GitLab CI comparison (optional) | Done | [EN](docs/week3/day15-jenkins-comparison.md) / [TR](docs/week3/day15-jenkins-comparison.tr.md) |
 | 16 | Kubernetes basics: pods, deployments, services | Done | [EN](docs/week4/day16-kubernetes-basics.md) / [TR](docs/week4/day16-kubernetes-basics.tr.md) |
-| 17 | ConfigMaps, Secrets, Ingress, namespaces | Not started | - |
-| 18 | Helm charts | Not started | - |
+| 17 | ConfigMaps, Secrets, Ingress, namespaces | Done | [EN](docs/week4/day17-config-secrets-ingress.md) / [TR](docs/week4/day17-config-secrets-ingress.tr.md) |
+| 18 | Helm charts | Done | [EN](docs/week4/day18-helm-chart.md) / [TR](docs/week4/day18-helm-chart.tr.md) |
 | 19 | Probes, resource limits, autoscaling | Not started | - |
 | 20 | Mid-program review and demo | Not started | - |
 

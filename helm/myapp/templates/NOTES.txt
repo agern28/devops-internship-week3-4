@@ -1,0 +1,12 @@
+Thanks for installing {{ .Chart.Name }} (release: {{ .Release.Name }}).
+
+1. Check the pods:
+   kubectl get pods -l app.kubernetes.io/instance={{ .Release.Name }} -n {{ .Release.Namespace }}
+
+{{- if .Values.ingress.enabled }}
+2. Add a hosts entry mapping {{ .Values.ingress.host }} to your cluster IP
+   (minikube ip), then browse http://{{ .Values.ingress.host }}/
+{{- else }}
+2. Port-forward to test locally:
+   kubectl port-forward svc/{{ include "myapp.name" . }} 8080:{{ .Values.service.port }} -n {{ .Release.Namespace }}
+{{- end }}
