@@ -27,7 +27,7 @@ tuttuğum notlar: ne yaptım, nerede takıldım, elimde ne kaldı.
 | 17 | ConfigMap, Secret, Ingress, namespace | Tamam | [TR](docs/week4/day17-config-secrets-ingress.tr.md) / [EN](docs/week4/day17-config-secrets-ingress.md) |
 | 18 | Helm chart | Tamam | [TR](docs/week4/day18-helm-chart.tr.md) / [EN](docs/week4/day18-helm-chart.md) |
 | 19 | Probe, resource limit, autoscaling | Tamam | [TR](docs/week4/day19-probes-hpa.tr.md) / [EN](docs/week4/day19-probes-hpa.md) |
-| 20 | Ara değerlendirme ve demo | Başlanmadı | - |
+| 20 | Ara değerlendirme ve demo | Tamam | [TR](docs/week4/day20-demo-runbook.tr.md) / [EN](docs/week4/day20-demo-runbook.md) |
 
 ## Yapı
 
